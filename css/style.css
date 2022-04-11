@@ -1,0 +1,139 @@
+.container {
+  max-width: 1700px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: #FFF;
+}
+
+.disable {
+  background-color: #E7E6E1;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-information__avatar {
+  margin-right: 11px;
+}
+
+.header-information__name {
+  margin-right: 10px;
+}
+
+.header-information__logout {
+  cursor: pointer;
+}
+
+.subheader {
+  background-color: #F3F2ED;
+  max-height: 48px;
+  padding: 17px 27px;
+}
+
+.subheader-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subheader-block__category {
+  color: #058DC7;
+}
+
+.subheader-block__category::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.subheader-block__info {
+  margin-left: 5px;
+  color: #707478;
+}
+
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.peoples {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.peoples__find {
+  background-color: #F9F8F6;
+  border: none;
+  outline: none;
+  max-height: 22px;
+  padding: 0 48px;
+}
+
+.peoples-block {
+  padding: 20px 29px;
+  max-height: 90px;
+  border-bottom: 1px solid #DFDBDC;
+}
+
+.peoples-block__avatar {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: 12px;
+}
+
+.peoples-block__name {
+  color: #058DC7;
+}
+
+.peoples-block__workplace {
+  font-size: 12px;
+  color: #808080;
+}
+
+.peoples-block__status {
+  display: inline-block;
+  height: 18px;
+  font-size: 10px;
+  background-color: #D2154F;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-main__avatar {
+  float: left;
+}
+/*# sourceMappingURL=style.css.map */
