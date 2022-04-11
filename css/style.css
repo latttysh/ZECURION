@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .container {
   max-width: 1700px;
   width: 95%;
@@ -10,6 +11,10 @@
 
 .disable {
   background-color: #E7E6E1;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -131,9 +136,71 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 16px 21px;
+}
+
+.info-main {
+  width: 325px;
 }
 
 .info-main__avatar {
+  width: 58px;
+  height: 58px;
   float: left;
+  margin-right: 15px;
+}
+
+.info-main__name {
+  margin-top: -5px;
+  font-size: 25px;
+  line-height: 34px;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+.info-main__name::after {
+  content: url("/img/whatch.png");
+  position: absolute;
+  top: -10px;
+  margin-left: 3px;
+}
+
+.info-main__workplace {
+  color: #808080;
+  font-size: 12px;
+}
+
+.info-stats {
+  margin-left: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info-stats__onlinetime {
+  color: #808080;
+  font-size: 12px;
+}
+
+.info-stats-block {
+  margin-right: 90px;
+}
+
+.info-stats-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */

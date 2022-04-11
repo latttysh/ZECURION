@@ -39,7 +39,41 @@
 
 .info
     display: flex
+    padding: 16px 21px
     &-main
+        width: 325px
         &__avatar
+            width: 58px
+            height: 58px
             float: left
+            margin-right: 15px
+        &__name
+            margin-top: -5px
+            font-size: 25px
+            line-height: 34px
+            margin-bottom: 2px
+            position: relative
+            &::after
+                content: url('/img/whatch.png')
+                position: absolute
+                top: -10px
+                margin-left: 3px
+        &__workplace
+            color: #808080
+            font-size: 12px
+    &-stats
+        margin-left: 59px
+        display: flex
+        flex-direction: column
+        &__onlinetime
+            color: #808080
+            font-size: 12px
+        &-block
+            margin-right: 90px
+            &__img
+        &-blocks
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-wrap: wrap
             
