@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 1700px;
   width: 95%;
   margin: 0 auto;
@@ -15,6 +17,22 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+th {
+  border-bottom: 1px solid #D1CFD7;
+  padding: 7px 10px;
+  color: #8D8F93;
+}
+
+td {
+  border-bottom: 1px solid #D1CFD7;
+  padding: 7px 10px;
+}
+
+caption {
+  text-align: left;
+  margin-bottom: 26px;
 }
 
 .header {
@@ -82,6 +100,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .peoples {
@@ -135,12 +154,14 @@ body {
 }
 
 .info {
-  border: 1px solid red;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   padding: 16px 21px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .info-main {
@@ -219,5 +240,98 @@ body {
 .info-stats-blocks-item {
   border-right: 1px solid #C6C6C6;
   padding-right: 90px;
+}
+
+.info-anomaly {
+  margin-top: 80px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-anomaly__title {
+  margin-left: 17px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.info-anomaly-block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  padding: 0px 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 74px;
+  width: 404px;
+  border: 1px solid #EE144E;
+  vertical-align: middle;
+  margin-bottom: 73px;
+  margin-left: 17px;
+}
+
+.info-anomaly-block__img {
+  margin-right: 14px;
+}
+
+.info-statistics__title {
+  margin-bottom: 11px;
+}
+
+.info-statistics__data {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 1310px;
+  height: 195px;
+  background: #F3F2F2;
+  color: #989898;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.info-statistics__data::after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info-tables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.info-tables__categories {
+  border-collapse: collapse;
+  border-spacing: 70px 20px;
+}
+
+.info-tables__sites {
+  border-collapse: collapse;
+  border-spacing: 70px 20px;
+}
+
+.info-tables__discipline {
+  border-collapse: collapse;
+  border-spacing: 70px 20px;
 }
 /*# sourceMappingURL=style.css.map */
