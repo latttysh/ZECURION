@@ -1,7 +1,7 @@
 .main-section
     display: flex
 .peoples
-    width: 340px
+    min-width: 340px
     display: flex
     flex-direction: column
     &__find
@@ -9,7 +9,7 @@
         border: none
         outline: none
         max-height: 22px
-        padding: 0 48px
+        padding: 0 25px
     &-block
         padding: 20px 29px
         // background-color: #E7E6E1
@@ -38,6 +38,8 @@
             color: #FFFFFF
 
 .info
+    border: 1px solid red
+    width: 100%
     display: flex
     padding: 16px 21px
     &-main
@@ -62,18 +64,22 @@
             color: #808080
             font-size: 12px
     &-stats
-        margin-left: 59px
-        display: flex
-        flex-direction: column
-        &__onlinetime
-            color: #808080
-            font-size: 12px
-        &-block
-            margin-right: 90px
-            &__img
+        flex: 1
+        &-time
+            margin-left: 59px
+            display: flex
+            justify-content: space-between
         &-blocks
             display: flex
-            align-items: center
+            margin-left: 59px
+            margin-top: 25px
             justify-content: space-between
+            align-items: center
             flex-wrap: wrap
-            
+            &-images
+                display: flex
+                align-items: center
+                gap: 10px
+            &-item
+                border-right: 1px solid #C6C6C6
+                padding-right: 90px
